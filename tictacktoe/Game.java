@@ -1,4 +1,8 @@
 
+
+import Referee;
+import tictacktoe.Player;
+
 public class Game implements Constants, Runnable {
 	private Board board;
 	private Referee reeferi;

@@ -1,9 +1,15 @@
+
+
 /*
  * This class is the drawing of the board.
  * Author@ Yobbahim Javier Israel Perez Vite
  * */
 import java.io.BufferedReader;
+
 import java.io.PrintWriter;
+
+import Constants;
+
 public class Board implements Constants {
 	private char board[][];
 	private int markCount;

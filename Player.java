@@ -1,6 +1,3 @@
-
-
-
 import java.io.*;
 public class Player {
     private String name;
@@ -13,6 +10,7 @@ public class Player {
         this.name = name;
         this.mark = mark;
     }
+
     public void play() {
     	printBoardToBothSocketOuts();
 
@@ -24,6 +22,7 @@ public class Player {
             	opponent.play();
         }
     }
+
     public void makeMove(){
         int row;
         int col;
@@ -52,7 +51,7 @@ public class Player {
 
     public boolean isWinner(){
         boolean winner = false;
-        boolean tie = board.complete();
+        boolean tie = board.isFull();
         boolean xWins = board.xWins();
         boolean oWins = board.oWins();
         if (tie || xWins || oWins){

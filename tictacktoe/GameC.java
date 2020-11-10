@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -68,7 +69,7 @@ public class GameC {
 	
 	
 	public static void main (String [] args) throws IOException {		
-		GameC aClient = new GameC ("localhost", 9898);
+		GameC aClient = new GameC ("localhost", 9000);
 		aClient.commSockets();		
 	}
 }
